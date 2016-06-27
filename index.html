@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>LiFT MNIST demo</title>
+<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script type="application/javascript;version=1.8" src="model.js" async></script>
+<script type="application/javascript;version=1.8" src="grad.js" async></script>
+<script type="application/javascript;version=1.8" src="act.js" async></script>
+<script type="application/javascript;version=1.8" src="train.js" async></script>
+<script type="application/javascript;version=1.8" src="labels.js"></script>
+<script type="application/javascript;version=1.8" src="mnist.js"></script>
+<link href="base.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<h1>LiFT MNIST demo</h1>
+<h2>Description</h2>
+<p>This demo is stolen from <a href="http://cs.stanford.edu/people/karpathy/convnetjs/demo/mnist.html">ConvNetJS</a>. It runs on Firefox ONLY.</p>
+
+<h2>Training Stats</h2>
+
+<div id="loaded">0/20 training sets loaded</div>
+
+<div id="stats">
+<button id="pause" class="paused">Start</button>
+<div id="graph"></div>
+</div>
+
+<h2>Network Visualization</h2>
+
+<div id="activation">
+</div>
+
+<h2>Example predictions on Test set</h2>
+
+<div id="prediction">
+</div>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+html {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    width: 800px;
+    padding: 0.5em;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 1em;
+    background-color: #DDD;
+    color: #333;
+    border-bottom: 1px solid #999;
+}
+
+fieldset {
+    margin: 40px 0 0;
+    padding: 0.5em 1em;
+    border: 1px solid #999;
+}
+
+fieldset legend {
+    font-weight: bold;
+    font-size: 14px;
+    margin: -26px 0.5em 0;
+    padding: 4px 1em;
+    border: 1px solid #999;
+    border-bottom: none;
+}
+
+fieldset.conv, fieldset.conv legend {
+    background-color: #FDD;
+}
+
+fieldset.relu, fieldset.relu legend{
+    background-color: #FDF;
+}
+
+fieldset.pool, fieldset.pool legend {
+    background-color: #DDF;
+}
+
+fieldset.fc, fieldset.fc legend  {
+    background-color: #DFF;
+}
+
+fieldset.softmax, fieldset.softmax legend {
+    background-color: #FFD;
+}
+
+fieldset>*{
+    margin: 0;
+    padding: 0;
+}
+
+
+canvas {
+    margin: 1px;
+}
+
+h3 {
+    font-size: 1em;
+    display: inline;
+}
+
+span {
+    margin: 0 1em;
+}
+
+div.group::before{
+    content: "(";
+}
+
+div.group::after{
+    content: ")";
+}
+
+div.group {
+    display: inline;
+}
+
+div.predict {
+    height: 60px;
+    width: 180px;
+    display: inline-block;
+    font-size: 12px;
+    box-shadow: 0px 0px 2px 2px #EEE;
+    margin: 5px;
+    padding: 5px;
+}
+
+div.predict>* {
+    display: inline-block;
+}
+
+div.predict div.pp {
+    margin: 1px;
+    padding: 1px;
+    background-color: #B55;
+}
+
+div.predict div.selected {
+    background-color: #5B5;
+}
+
+button#pause {
+    width: 100px;
+    background-color: #CFC;
+    border-style: inset;
+}
+
+button#pause.paused {
+    background-color: #FCC;
+    border-style: outset;
+}
+
+div#loaded {
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(0deg,#FCC,#FCC,#FCC), #CFC;
+    background-repeat: no-repeat, repeat;
+    background-position: right, right;
+    margin: 0.5em 0;
+}
+
+svg text.x {
+    text-anchor: start;
+}
+
+svg text.loss {
+    text-anchor: end;
+}
+
+svg text.accuracy {
+    text-anchor: start;
+}
+
+
+svg line.x {
+    stroke: #EEE;
+    stroke-width: 1;
+}
+
+svg line.loss {
+    stroke: #F66;
+    stroke-width: 2;
+}
+
+svg line.accuracy {
+    stroke: #6F6;
+    stroke-width: 2;
+}
