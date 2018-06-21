@@ -575,7 +575,7 @@ function MNIST(){
     let PARAMS = ["K1","B1","K2","B2","W","B"];
     let graph = Graph();
 
-    function predict(model, samples){
+    function *predict(model, samples){
         let id = "prediction";
         let old_elem = document.getElementById(id);
 
@@ -626,7 +626,7 @@ function MNIST(){
         old_elem.parentNode.replaceChild(new_elem, old_elem);
     }
 
-    function train(grad, trainer, samples){
+    function *train(grad, trainer, samples){
         let loss = 0.0;
 
         for(let name of PARAMS) grad.arrays["g"+name].fill(0.0);
